@@ -11,13 +11,15 @@
         crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-    <link href="sticky-footer.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
 
     <title>Hello, world!</title>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,18 +36,44 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav">
+                    <button class="login btn btn-primary" data-toggle="modal" data-target="#loginModal">
+                        <i class="fas fa-user"></i> entrar</button>
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Faça login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Nome</label>
+                                            <input type="text" class="form-control" id="name" placeholder="">
+                                            <label for="password">Senha</label>
+                                            <input type="password" class="form-control" id="password" placeholder="">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="save">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            Dropdown
+                            <i class="fas fa-user"></i> Hello,
+                            <span class="name"></span>!
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- https://getbootstrap.com/docs/4.1/components/dropdowns/#forms -->
-                            <a class="dropdown-item" href="">Registrar</a>
-                            <a class="dropdown-item" href="login.html">Entrar</a>
                             <a class="dropdown-item" href="wishList.html">Lista de Desejos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item logout" href="#">Sair</a>
                         </div>
                     </li>
                 </ul>
@@ -53,60 +81,23 @@
         </div>
     </nav>
 
-    <!-- <tr>
-        <td height="28" align="right">
-            <table border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td align="left" valign="bottom">
-
-                        <td valign="bottom">&nbsp;</td>
-                        <td>
-                            <img src="" width="200" height="1" alt="" border="0">
-                        </td>
-
-                        <form action="http://www.google.com/custom" method="GET" target="_blank" name="busca_google">
-                            <td align="right">
-                                <input type="hidden" name="domains" value="">
-                                <input type="hidden" name="sitesearch" value="" checked>
-                                <input type="text" name="q" size="40" class="link_11">
-                            </td>
-                        </form>
-
-                        <td width="5"></td>
-                        <td align="right" valign="bottom">
-                            <input type="submit" name="buscar" value="Buscar" class="link_10">
-                        </td>
-                        <td>&nbsp;&nbsp;</td>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr> -->
-
-    <form action=`` target="_blank">
-        <input type="text" class="input">
-        <input type="button" class="btn" value="buscar"/>
-    </form>
+    <div class="center">
+        <img src="https://cdn.discordapp.com/attachments/452148075788763136/452222312301985804/logo.png">
+        </br>
+        <div class="container">
+            <div class="form-inline">
+                <input type="text" class="input form-control">&nbsp;
+                <button class="search btn btn-primary">
+                    <i class="fas fa-search"></i> buscar</button>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
             <span class="text-muted">FOOTER</span>
         </div>
     </footer>
-
-    <script>
-        var btn = document.querySelector('.btn');
-
-        btn.addEventListener('click', () => {
-            var input = document.querySelector('.input').value;
-            console.log(input.replace(/\s/g, '+'));
-        })
-
-        // pegar o input -> variable search
-        // button on click -> window.location(google.com.br/search?q=${search.value})
-
-    </script>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -116,6 +107,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
