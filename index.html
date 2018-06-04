@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="main.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+        
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
 
     <title>Hello, world!</title>
 </head>
@@ -71,9 +72,11 @@
                             <span class="name"></span>!
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="wishList.html">Lista de Desejos</a>
+                            <a class="dropdown-item" href="wishList.html">
+                                <i class="fas fa-shopping-basket"></i> Lista de Desejos</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item logout" href="#">Sair</a>
+                            <a class="dropdown-item logout" href="#">
+                                <i class="fas fa-sign-out-alt"></i> Sair</a>
                         </div>
                     </li>
                 </ul>
@@ -82,13 +85,14 @@
     </nav>
 
     <div class="center">
-        <img src="https://cdn.discordapp.com/attachments/452148075788763136/452222312301985804/logo.png">
+        <img class="logo" src="https://cdn.discordapp.com/attachments/452148075788763136/452222312301985804/logo.png">
         </br>
         <div class="container">
             <div class="form-inline">
-                <input type="text" class="input form-control">&nbsp;
+                <input type="text" class="bar input form-control">&nbsp;
                 <button class="search btn btn-primary">
-                    <i class="fas fa-search"></i> buscar</button>
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
     </div>

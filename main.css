@@ -18,10 +18,13 @@ body {
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
 }
-img {
+.logo {
   height: 300px;
   width: auto;
 }
 .center {
   text-align: center;
+}
+.bar {
+  min-width: 600px;
 }
