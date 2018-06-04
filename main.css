@@ -25,6 +25,11 @@ body {
 .center {
   text-align: center;
 }
-.bar {
-  min-width: 600px;
+.btn-primary {
+  background-color: #52647c;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #4a5970;
+  color: white;
 }
