@@ -33,3 +33,6 @@ body {
   background-color: #4a5970;
   color: white;
 }
+.input-group {
+  padding: 0 25%;
+}
