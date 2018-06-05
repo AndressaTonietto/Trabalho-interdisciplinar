@@ -67,7 +67,6 @@ const list = [
     },
 ];
 
-//
 const updateList = (games) => {
     const wishList = document.querySelector('.wishList');
 
@@ -108,4 +107,10 @@ views.forEach(view => {
         const cardTitle = view.dataset.title;
         window.location = `http://google.com/search?q= ${cardTitle}`;
     });
+})
+
+const logoutBtn = document.querySelector('.logout');
+logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem('user');
+    window.location = 'index.html';
 })
