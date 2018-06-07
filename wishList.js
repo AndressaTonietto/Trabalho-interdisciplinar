@@ -2,68 +2,79 @@ const list = [
     {
         img: 'https://news-cdn.softpedia.com/images/news2/Portal-is-The-First-Game-on-Steam-for-Linux-2.jpg',
         title: 'Portal',
-        text: 'Portal™ é um novo jogo para um jogador da Valve. Estabelecido nos misteriosos Laboratórios Aperture Science, Portal é aclamado como um dos novos jogos mais inovadores no horizonte e oferecerá aos jogadores horas de jogabilidade única.',
-        updated: ''
+        text: 'Portal™ is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay.',
+        updated: '9 mins',
+        price: "",
     },
     {
-        img: "https://vignette.wikia.nocookie.net/youtube/images/7/70/Minecraft-logo.png/revision/latest?cb=20131202211201",
+        img: "http://image.jeuxvideo.com/medias-md/152667/1526668472-2554-card.jpg",
         title: "Minecraft",
-        text: "This is a wider card with supporting text below as a natural lead-in to additional content.  This content is a little bit longer.",
-        updated: "",
+        text: "Minecraft is a game about placing blocks and going on adventures.",
+        updated: "20 days",
+        price: "",
     },
     {
         img: "https://ih1.redbubble.net/image.505938373.2392/flat,800x800,075,f.u5.jpg",
         title: "Fortnite",
-        text: "Text",
-        updated: "updated",
+        text: "Fortnite is a co-op sandbox survival game developed by Epic Games and People Can fly and published by Epic Games.",
+        updated: "2 months",
+        price: "",
     },
     {
-        img: "https://vignette.wikia.nocookie.net/dont-starve-game/images/c/c9/Logo.png/revision/latest?cb=20140324103850",
-        title: "Dont't Starve",
-        text: 'text',
-        updated: '',
+        img: "https://steamcdn-a.akamaihd.net/steam/apps/219740/header.jpg?t=1505326169",
+        title: "Don't Starve",
+        text: "Don't Starve is an uncompromising wilderness survival game full of science and magic.",
+        updated: '2 months',
+        price: "",
     },
     {
-        img: "https://s3.amazonaws.com/gamerzarena-app/game-title/30",
+        img: "https://media.contentapi.ea.com/content/bf/en-us/games/battlefield-1/_global_/_jcr_content/ccm/componentwrapper_0/components/opengraph/ogImage.img.jpg",
         title: "Battlefield 1",
-        text: "text",
-        updated: "updated",
+        text: "Battlefield 1 is a first-person shooter video game developed by EA DICE and publushed by Eletronic Arts.",
+        updated: "3 months",
+        price: "",
     },
     {
         img: "https://res.cloudinary.com/teepublic/image/private/s--M7odt91i--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1478457254/production/designs/784128_1.jpg",
         title: "Rainbow Six",
-        text: "text",
-        updated: "",
+        text: "",
+        updated: "5 months",
+        price: "",
     },
     {
         img: "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5a/67/02/5a670294-229e-c44d-ded4-22083365fd48/mzl.fqntrgwg.jpg/643x0w.jpg",
         title: "HearthStone",
-        text: "text",
-        updated: "",
+        text: "Sheathe your sword, draw your deck, and get ready for Hearthstone - the fast-paced strategy card game that's easy to learn and massively fun.",
+        updated: "5 months",
+        price: "",
     },
     {
         img: "https://i.imgur.com/kLdd5uN.jpg",
         title: "World of WarCraft",
-        text: "text",
-        updated: "updated",
+        text: "WoW is a massively multiplayer online role-playing game.",
+        updated: "6 months",
+        price: "",
     },
     {
         img: "http://signup.citiesskylines.com/assets/meta-og-image-17ddbcd1039dffdb5ada0bfc6a509fea.jpg",
         title: "Cities Skylines",
-        text: "text",
-        updated: "updated",
+        text: "Cities Skylines is a modern take on the classic city simulation. Build and manage your city, your are only limited by your imagination!",
+        updated: "7 months",
+        price: "",
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Half-Life_2_Logo.svg/2000px-Half-Life_2_Logo.svg.png",
-        title: "Half Life 2",
-        text: "text",
-        updated: "updated",
+        img: "https://www.dsogaming.com/wp-content/uploads/2017/08/20170322213600_1.jpg",
+        title: "Half-Life 2",
+        text: "Half-Life 2 is a first-person shooter video game developed and published by Valve Corporation.",
+        updated: "9 months",
+        price: "",
     },
     {
         img: "https://vignette.wikia.nocookie.net/assassinscreedbr/images/c/cb/Assassins_creed_2_logo_nosologeeks1.jpg/revision/latest?cb=20100811014738&path-prefix=pt",
         title: "Assassin's Creed II",
-        text: "text",
-        updated: "updated",
+        text: "Assassn's Creed II is a 2009 action-adventure video game.",
+        updated: "1 year",
+        price: "",
     },
 ];
 
@@ -83,6 +94,7 @@ const updateList = (games) => {
                 <div class="card-body">
                     <h5 class="card-title">${item.title}</h5>
                     <p class="card-text">${item.text}</p>
+                    <p class="card-text">Price: ${item.price}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary view" data-title="${item.title}">View</button>

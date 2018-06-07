@@ -1,6 +1,6 @@
 body {
   display: block;
-  background-color: #1c1c1c;
+  background-color: #646464;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -27,25 +27,32 @@ body {
 .center {
   text-align: center;
 }
-.btn-primary {
-  background-color: #586170;
-  color: white;
-  border: solid 2px #505d72;
-}
-.btn-primary:hover {
-  background-color: #505d72;
-  color: white;
-  border: solid 2px #505d72;
-}
-.btn-primary:active {  
-  background-color: #505d72;
-  color: white;
-  border: solid 2px #505d72;
-
-}
 .input-group {
   padding: 0 25%;
 }
 .navbar-dark {
-  background-color: #586170;
+  background-color: #262626;
+  /* body bg color: 333a44 */
 }
+.btn-dark {
+  /* #18697c */
+  background-color: #646464;
+  border-color: #262626;
+}
+.btn-dark:hover {
+  background-color: #18697c;
+  border-color: #262626;
+}
+.search {
+  border-color: #262626;
+}
+.search:hover {
+  background-color: #262626;
+  border-color: #262626;
+}
+.card {
+  border-color: #262626;
+  background-color: #646464;
+}
+input {
+  background-color: #efefef !important;
