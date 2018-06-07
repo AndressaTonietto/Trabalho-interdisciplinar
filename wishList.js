@@ -86,7 +86,7 @@ const updateList = (games) => {
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary view" data-title="${item.title}">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Remove</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary remove">Remove</button>
                         </div>
                         <small class="text-muted">${item.updated}</small>
                     </div>
@@ -101,12 +101,23 @@ const updateList = (games) => {
 window.onload = updateList(list);
 
 const views = document.querySelectorAll('.view');
+const removes = document.querySelectorAll('.remove');
 
 views.forEach(view => {
     view.addEventListener('click', () => {
         const cardTitle = view.dataset.title;
         window.location = `http://google.com/search?q= ${cardTitle}`;
     });
+})
+
+removes.forEach(remove => {
+    remove.addEventListener('click', () => {
+        var index = list.indexOf(this);
+        if (index > -1) {
+            list.splice(index, 1);
+            updateList(list);
+        }
+    })
 })
 
 const logoutBtn = document.querySelector('.logout');

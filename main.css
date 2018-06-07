@@ -1,5 +1,6 @@
 body {
   display: block;
+  background-color: #1c1c1c;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -21,18 +22,30 @@ body {
 .logo {
   height: 300px;
   width: auto;
+  padding: 300px auto 0px;
 }
 .center {
   text-align: center;
 }
 .btn-primary {
-  background-color: #52647c;
+  background-color: #586170;
   color: white;
+  border: solid 2px #505d72;
 }
 .btn-primary:hover {
-  background-color: #4a5970;
+  background-color: #505d72;
   color: white;
+  border: solid 2px #505d72;
+}
+.btn-primary:active {  
+  background-color: #505d72;
+  color: white;
+  border: solid 2px #505d72;
+
 }
 .input-group {
   padding: 0 25%;
+}
+.navbar-dark {
+  background-color: #586170;
 }
