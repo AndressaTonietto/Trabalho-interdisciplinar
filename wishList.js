@@ -1,6 +1,6 @@
 const list = [
     {
-        img: 'https://news-cdn.softpedia.com/images/news2/Portal-is-The-First-Game-on-Steam-for-Linux-2.jpg',
+        img: 'hittps://news-cdn.softpedia.com/images/news2/Portal-is-The-First-Game-on-Steam-for-Linux-2.jpg',
         title: 'Portal',
         text: 'Portal™ is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay.',
         updated: '9 mins',
@@ -88,20 +88,20 @@ const updateList = (games) => {
         cards +=
             `
         <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="${item.img}"
+            <div class="card border-light mb-4 box-shadow">
+                <img class="card-img-top" src="${item.img}" width="200px" height="180px"
                     alt="${item.title}">
                 <div class="card-body">
                     <h5 class="card-title">${item.title}</h5>
                     <p class="card-text">${item.text}</p>
                     <p class="card-text">Price: ${item.price}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary view" data-title="${item.title}">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary remove">Remove</button>
-                        </div>
-                        <small class="text-muted">${item.updated}</small>
+                </div>
+                <div class="card-footer d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary view" data-title="${item.title}">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary remove">Remove</button>
                     </div>
+                    <small class="text-muted">${item.updated}</small>
                 </div>
             </div>
         </div>
