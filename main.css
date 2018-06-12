@@ -1,15 +1,11 @@
 body {
   display: block;
   background-color: #646464;
+  margin-bottom: 60px; /* Margin bottom by footer height */
 }
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
-}
-body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
 }
 .footer {
   position: absolute;
@@ -28,19 +24,18 @@ body {
   text-align: center;
 }
 .input-group {
-  padding: 0 25%;
+  padding: 0 20%;
 }
 .navbar-dark {
   background-color: #262626;
-  /* body bg color: 333a44 */
 }
 .btn-dark {
-  /* #18697c */
+  max-width: 100px;
   background-color: #646464;
   border-color: #262626;
 }
 .btn-dark:hover {
-  background-color: #18697c;
+  background-color: #47c4ff;
   border-color: #262626;
 }
 .search {
@@ -59,4 +54,8 @@ input {
 }
 .card-header {
   min-height: 180px;
+}
+.dropdown-menu {
+  background-color: #efefef;
+  max-width: 200px;
 }

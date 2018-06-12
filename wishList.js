@@ -1,6 +1,6 @@
 const list = [
     {
-        img: 'hittps://news-cdn.softpedia.com/images/news2/Portal-is-The-First-Game-on-Steam-for-Linux-2.jpg',
+        img: 'https://news-cdn.softpedia.com/images/news2/Portal-is-The-First-Game-on-Steam-for-Linux-2.jpg',
         title: 'Portal',
         text: 'Portal™ is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay.',
         updated: '9 mins',
@@ -72,7 +72,7 @@ const list = [
     {
         img: "https://vignette.wikia.nocookie.net/assassinscreedbr/images/c/cb/Assassins_creed_2_logo_nosologeeks1.jpg/revision/latest?cb=20100811014738&path-prefix=pt",
         title: "Assassin's Creed II",
-        text: "Assassn's Creed II is a 2009 action-adventure video game.",
+        text: "Assassin's Creed II is a 2009 action-adventure video game.",
         updated: "1 year",
         price: "",
     },
@@ -120,7 +120,7 @@ const removes = document.querySelectorAll('.remove');
 views.forEach(view => {
     view.addEventListener('click', () => {
         const cardTitle = view.dataset.title;
-        window.location = `http://google.com/search?q= ${cardTitle}`;
+        window.location = `http://google.com/search?q=${cardTitle}`;
     });
 })
 
