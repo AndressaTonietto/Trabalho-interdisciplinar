@@ -53,12 +53,10 @@ body {
 input {
   background-color: #efefef !important;
 }
-/*.card {
-  padding: 25px auto !important;
-  border-color: #262626;
-  background-color: #646464;
-}*/
-.box-shadow {
-  width: 100%;
+.card {
+  background-color: #ededed;
   height: 100%;
+}
+.card-header {
+  min-height: 180px;
 }

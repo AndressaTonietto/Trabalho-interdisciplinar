@@ -89,8 +89,10 @@ const updateList = (games) => {
             `
         <div class="col-md-4">
             <div class="card border-light mb-4 box-shadow">
-                <img class="card-img-top" src="${item.img}" width="200px" height="180px"
-                    alt="${item.title}">
+                <div class="card-header">
+                    <img class="card-img-top" src="${item.img}"
+                        alt="${item.title}">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">${item.title}</h5>
                     <p class="card-text">${item.text}</p>
