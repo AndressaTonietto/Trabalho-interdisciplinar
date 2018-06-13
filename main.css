@@ -59,3 +59,14 @@ input {
   background-color: #efefef;
   max-width: 200px;
 }
+.store {
+  max-width: 100px;
+  max-height: 100px;
+}
+.farcry {
+  max-width: 200px;
+  max-height: 200px;
+}
+.fofofodase {
+  background-color: #ededed;
+}
