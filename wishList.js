@@ -4,14 +4,12 @@ const list = [
         title: 'Portal',
         text: 'Portal™ is a new single player game from Valve. Set in the mysterious Aperture Science Laboratories, Portal has been called one of the most innovative new games on the horizon and will offer gamers hours of unique gameplay.',
         updated: '9 mins',
-        price: "",
     },
     {
         img: "http://image.jeuxvideo.com/medias-md/152667/1526668472-2554-card.jpg",
         title: "Minecraft",
         text: "Minecraft is a game about placing blocks and going on adventures.",
         updated: "20 days",
-        price: "",
     },
     {
         img: "https://cdn.discordapp.com/attachments/452148075788763136/460538329931317248/f34fdaf585bb9283ddc1997e4f9353c1c13caf87.jpg",
@@ -25,56 +23,48 @@ const list = [
         title: "Don't Starve",
         text: "Don't Starve is an uncompromising wilderness survival game full of science and magic.",
         updated: '2 months',
-        price: "",
     },
     {
         img: "https://media.contentapi.ea.com/content/bf/en-us/games/battlefield-1/_global_/_jcr_content/ccm/componentwrapper_0/components/opengraph/ogImage.img.jpg",
         title: "Battlefield 1",
         text: "Battlefield 1 is a first-person shooter video game developed by EA DICE and publushed by Eletronic Arts.",
         updated: "3 months",
-        price: "",
     },
     {
         img: "https://res.cloudinary.com/teepublic/image/private/s--M7odt91i--/t_Preview/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1478457254/production/designs/784128_1.jpg",
         title: "Rainbow Six",
         text: "Tom Clancy's Rainbow Six is a tactical shooter video game and the first in the Rainbow Six series. It was developed and published by Red Storm Entertainment in 1998 for the PC.",
         updated: "5 months",
-        price: "",
     },
     {
         img: "https://cdn.discordapp.com/attachments/452148075788763136/460538705925505034/header.jpg",
         title: "To the moon",
         text: "Uma história sobre a viagem de dois doutores através das memórias de um homem morinbundo, de modo a realizar artificialmente o seu último desejo.",
         updated: "5 months",
-        price: "",
     },
     {
         img: "https://cdn.discordapp.com/attachments/452148075788763136/460539674088177664/mirrors-edge-header.jpg",
         title: "Mirror's Edge",
         text: "In a city where information is heavily monitored, agile couries called Runners transport sensitive data away from prying eyes. In this seemingly utopian paradise, a crime has been committed, your sister has been framed and now you are being hunted.",
         updated: "6 months",
-        price: "",
     },
     {
         img: "http://signup.citiesskylines.com/assets/meta-og-image-17ddbcd1039dffdb5ada0bfc6a509fea.jpg",
         title: "Cities Skylines",
         text: "Cities Skylines is a modern take on the classic city simulation. Build and manage your city, your are only limited by your imagination!",
         updated: "7 months",
-        price: "",
     },
     {
-        img: "https://www.dsogaming.com/wp-content/uploads/2017/08/20170322213600_1.jpg",
+        img: "https://cdn.discordapp.com/attachments/452148075788763136/460543592553906177/hl2-logo.jpg",
         title: "Half-Life 2",
         text: "Half-Life 2 is a first-person shooter video game developed and published by Valve Corporation.",
         updated: "9 months",
-        price: "",
     },
     {
         img: "https://vignette.wikia.nocookie.net/assassinscreedbr/images/c/cb/Assassins_creed_2_logo_nosologeeks1.jpg/revision/latest?cb=20100811014738&path-prefix=pt",
         title: "Assassin's Creed II",
         text: "Assassin's Creed II is a 2009 action-adventure video game.",
         updated: "1 year",
-        price: "",
     },
 ];
 
@@ -96,7 +86,6 @@ const updateList = (games) => {
                 <div class="card-body">
                     <h5 class="card-title">${item.title}</h5>
                     <p class="card-text">${item.text}</p>
-                    <p class="card-text">Price: ${item.price}</p>
                 </div>
                 <div class="card-footer d-flex justify-content-between align-items-center">
                     <div class="btn-group">
